@@ -1,0 +1,65 @@
+/// Copy text color
+/// @type Color
+$Black: #000 !default;
+
+/// Copy text color
+/// @type Color
+$White: #fff !default;
+
+/// Copy text color
+/// @type Color
+$Cyan: hsl(180, 66%, 49%) !default;
+
+/// Main brand color
+/// @type Color
+$Violet: hsl(257, 27%, 26%) !default;
+
+/// Light grey
+/// @type Color
+$Red: hsl(0, 87%, 67%) !default;
+
+/// Medium grey
+/// @type Color
+$Gray: hsl(0, 0%, 75%) !default;
+
+/// Dark grey
+/// @type Color
+$GrayishViolet: hsl(257, 7%, 63%) !default;
+
+/// Dark Blue
+/// @type Color
+$DarkBlue: hsl(255, 11%, 22%) !default;
+
+/// Dark Violent
+/// @type Color
+$DarkViolet: hsl(260, 8%, 14%) !default;
+
+
+
+
+/// font size
+/// @type length
+$Text: 18px;
+
+
+/// font weight
+/// @type length
+$Normal: 500;
+$Bold: 700;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1440px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+  ) !default;

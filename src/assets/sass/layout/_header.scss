@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.Navbar{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: $Gray;
+        text-decoration: none;
+        font-size: $Text;
+        font-weight: $Bold;
+    }
+      
+        @include on-event {
+          text-decoration: none;
+          color: $Black;
+        }
+      }
