@@ -3,7 +3,7 @@ nav{
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .Navbar{
     margin: 0;
@@ -12,15 +12,20 @@ nav{
     width: 35%;
     display: flex;
     justify-content: space-between;
-    a {
+    li img{
+        margin-bottom: 10px;
+    }
+   li a {
         color: $Gray;
         text-decoration: none;
         font-size: $Text;
-        font-weight: $Bold;
+        font-weight: $Normal;
+        
+        @include on-event {
+            text-decoration: none;
+            color: $Black;
+          }
     }
       
-        @include on-event {
-          text-decoration: none;
-          color: $Black;
-        }
       }
+

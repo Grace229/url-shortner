@@ -13,8 +13,8 @@ const header = () => {
     <li><a href="#">Resources</a></li>
 </ul>
 <div>
-<button>Login</button>
-<button>Signup</button>
+<button className='first-button'>Login</button>
+<button className='second-button'>Signup</button>
 
 </div>
     </nav>

@@ -1,1 +1,33 @@
+.first-button{
+    margin-right: 20px;
+    @include roundButton($White, $Gray, 100px, 10px);
+    @include on-event {
+        @include roundButton($Cyan, $White, 100px, 10px)
+    }
+}
+.second-button{
+    @include roundButton($Cyan, $White, 100px, 10px);
+    @include on-event {
+        @include roundButton($White, $Cyan, 100px, 10px);
+    }
+}
+.Container-Full button{
+    @include roundButton($Cyan, $White, 160px, 14px);
+    @include on-event {
+        @include roundButton($Violet, $White, 160px, 14px);
+    }
+}
+.shorten-items button{
+    @include Button($Cyan, $White, 180px, 18px);
+    @include on-event {
+        @include Button($Cyan, $White, 180px, 18px);
+    }
+}
 
+.copy-button{
+    margin: 10px 0 10px 25px;
+    @include Button($Cyan, $White, 100px, 10px);
+    @include on-event {
+        @include Button($Violet, $White, 100px, 10px);
+    }
+}

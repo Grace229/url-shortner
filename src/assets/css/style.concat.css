@@ -1,4 +1,5 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 /**
  * Set up a decent box model on the root element
  */
@@ -30,79 +31,295 @@ a {
 /**
  * Basic typography style for copy text
  */
-/**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table; }
-
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1440px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */ }
-
-/**
- * Hide text while making it readable for screen readers
- * 1. Needed in WebKit-based browsers because of an implementation bug;
- *    See: https://code.google.com/p/chromium/issues/detail?id=457146
- */
-.hide-text {
-  overflow: hidden;
+.Container-Full h1 {
+  font-weight: bold;
+  margin: 40px 0 0 0;
   padding: 0;
-  /* 1 */
-  text-indent: 101%;
-  white-space: nowrap; }
+  font-size: 82px;
+  line-height: 1;
+  letter-spacing: 0;
+  width: 80%; }
 
-/**
- * Hide element while making it readable for screen readers
- * Shamelessly borrowed from HTML5Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
- */
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
+.Container-Full p {
+  margin: 10px 0 50px 0;
   padding: 0;
-  position: absolute;
-  width: 1px; }
+  font-size: 22px;
+  font-weight: 500;
+  color: #bfbfbf;
+  width: 60%; }
 
 nav {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  margin-top: 20px; }
+  margin-top: 30px; }
 
 .Navbar {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: space-between; }
-  .Navbar a {
+  .Navbar li img {
+    margin-bottom: 10px; }
+  .Navbar li a {
     color: #bfbfbf;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 700; }
-  .Navbar:hover, .Navbar:active, .Navbar:focus, .Navbar:focus-within {
-    text-decoration: none; }
+    font-weight: 500; }
+    .Navbar li a:hover, .Navbar li a:active, .Navbar li a:focus, .Navbar li a:focus-within {
+      text-decoration: none;
+      color: #000; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif; }
+
+.Container {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px; }
+
+.Container-Full {
+  width: 100%;
+  margin: 50px 0px 0px 0px;
+  height: 500px;
+  display: flex; }
+
+.hero-image {
+  width: 40%; }
+
+.hero-text {
+  margin: 0 0 0 150px;
+  width: 60%; }
+
+.col-8 {
+  width: 70%; }
+
+.col-7 {
+  width: 60%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-5 {
+  width: 40%; }
+
+.col-4 {
+  width: 30%; }
+
+.col-3 {
+  width: 20%; }
+
+.col-2 {
+  width: 10%; }
+
+.Main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.shorten-container {
+  padding: 0;
+  margin: 120px 0 0 0;
+  background-color: #EFF1F7;
+  width: 100%;
+  height: 450px; }
+
+.shorten {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 5%; }
+
+.shorten-box {
+  width: 100%;
+  height: 168px;
+  background: url("../img/bg-shorten-desktop.svg") no-repeat #35323e;
+  border-radius: 10px; }
+  .shorten-box .shorten-items {
+    width: 85%;
+    height: 168px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; }
+  .shorten-box .shorten-items .input {
+    width: 75%; }
+  .shorten-box .input input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 18px; }
+  .shorten-box .shorten-items .button {
+    width: 25%;
+    padding: 0 0 0 55px; }
+
+.results {
+  width: 100%; }
+  .results .result {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin: 20px 0; }
+  .results .result p {
+    font-size: 20px;
+    font-weight: 500; }
+  .results .result div {
+    display: flex; }
+  .results .result div p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2acfcf; }
+
+.advanced-statistics {
+  width: 100%;
+  background-color: #EFF1F7;
+  width: 100%;
+  height: 450px; }
+  .advanced-statistics .first-div {
+    width: 35%;
+    margin: 0 auto; }
+  .advanced-statistics h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold; }
+  .advanced-statistics p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #bfbfbf;
+    text-align: center;
+    line-height: 1.5; }
+
+.cards {
+  width: 80%;
+  margin: 0 auto; }
+  .cards .card {
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px; }
+  .cards .image-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url("../img/icon-brand-recognition.svg") no-repeat center #35323e;
+    position: absolute; }
+
+.first-button {
+  margin-right: 20px;
+  background-color: #fff;
+  width: 100px;
+  padding: 10px;
+  color: #bfbfbf;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer; }
+  .first-button:hover, .first-button:active, .first-button:focus, .first-button:focus-within {
+    background-color: #2acfcf;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer; }
+
+.second-button {
+  background-color: #2acfcf;
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer; }
+  .second-button:hover, .second-button:active, .second-button:focus, .second-button:focus-within {
+    background-color: #fff;
+    width: 100px;
+    padding: 10px;
+    color: #2acfcf;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer; }
+
+.Container-Full button {
+  background-color: #2acfcf;
+  width: 160px;
+  padding: 14px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer; }
+  .Container-Full button:hover, .Container-Full button:active, .Container-Full button:focus, .Container-Full button:focus-within {
+    background-color: #3b3054;
+    width: 160px;
+    padding: 14px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer; }
+
+.shorten-items button {
+  background-color: #2acfcf;
+  width: 180px;
+  padding: 18px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer; }
+  .shorten-items button:hover, .shorten-items button:active, .shorten-items button:focus, .shorten-items button:focus-within {
+    background-color: #2acfcf;
+    width: 180px;
+    padding: 18px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer; }
+
+.copy-button {
+  margin: 10px 0 10px 25px;
+  background-color: #2acfcf;
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer; }
+  .copy-button:hover, .copy-button:active, .copy-button:focus, .copy-button:focus-within {
+    background-color: #3b3054;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer; }

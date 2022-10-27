@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: hsl(0deg, 0%, 75%);
+  text-decoration: none;
+}
+a:hover, a:active, a:focus, a:focus-within {
+  text-decoration: none;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+.Container-Full h1 {
+  font-weight: bold;
+  margin: 40px 0 0 0;
+  padding: 0;
+  font-size: 82px;
+  line-height: 1;
+  letter-spacing: 0;
+  width: 80%;
+}
+
+.Container-Full p {
+  margin: 10px 0 50px 0;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 75%);
+  width: 60%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.Navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+.Navbar li img {
+  margin-bottom: 10px;
+}
+.Navbar li a {
+  color: hsl(0deg, 0%, 75%);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.Navbar li a:hover, .Navbar li a:active, .Navbar li a:focus, .Navbar li a:focus-within {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.Container-Full {
+  width: 100%;
+  margin: 50px 0px 0px 0px;
+  height: 500px;
+  display: flex;
+}
+
+.hero-image {
+  width: 40%;
+}
+
+.hero-text {
+  margin: 0 0 0 150px;
+  width: 60%;
+}
+
+.col-8 {
+  width: 70%;
+}
+
+.col-7 {
+  width: 60%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 40%;
+}
+
+.col-4 {
+  width: 30%;
+}
+
+.col-3 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 10%;
+}
+
+.advanced-statistics {
+  margin: 100px 0 0 0;
+  padding: 0;
+  background-color: #EFF1F7;
+  width: 100%;
+  height: 700px;
+}
+
+.shorten-box {
+  width: 80%;
+  height: 168px;
+  margin: 0 auto;
+  background: url("../img/bg-shorten-desktop.svg") no-repeat hsl(255deg, 11%, 22%);
+  border-radius: 10px;
+}
+.shorten-box .shorten-items {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  justify-content: center;
+  gap: 20px;
+}
+.shorten-box .shorten-items input {
+  width: 70%;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.first-button {
+  margin-right: 20px;
+  background-color: #fff;
+  width: 100px;
+  padding: 10px;
+  color: hsl(0deg, 0%, 75%);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+}
+.first-button:hover, .first-button:active, .first-button:focus, .first-button:focus-within {
+  background-color: hsl(180deg, 66%, 49%);
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+}
+
+.second-button {
+  background-color: hsl(180deg, 66%, 49%);
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+}
+.second-button:hover, .second-button:active, .second-button:focus, .second-button:focus-within {
+  background-color: #fff;
+  width: 100px;
+  padding: 10px;
+  color: hsl(180deg, 66%, 49%);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+}
+
+.Container-Full button {
+  background-color: hsl(180deg, 66%, 49%);
+  width: 160px;
+  padding: 14px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+}
+.Container-Full button:hover, .Container-Full button:active, .Container-Full button:focus, .Container-Full button:focus-within {
+  background-color: hsl(257deg, 27%, 26%);
+  width: 160px;
+  padding: 14px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+}
+
+.shorten-items button {
+  background-color: hsl(180deg, 66%, 49%);
+  width: 200px;
+  padding: 18px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+}/*# sourceMappingURL=main.css.map */

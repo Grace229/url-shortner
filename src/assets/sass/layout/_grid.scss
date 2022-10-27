@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+.Container{
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+}
+.Container-Full{
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    height: 500px;
+    display: flex;
+}
+.hero-image{
+    width: 40%;
+}
+.hero-text{ 
+    margin: 0 0 0 150px;
+    width: 60%;
+}
+.col-8{
+    width: 70%;
+}
+.col-7{
+    width: 60%;
+}
+
+.col-6{
+    width: 50%;
+}
+.col-5{
+    width: 40%;
+}
+.col-4{
+width: 30%;
+}
+.col-3{
+width: 20%;
+}
+.col-2{
+width: 10%;
+}
