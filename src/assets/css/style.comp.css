@@ -184,17 +184,17 @@ body {
   width: 100%;
   background-color: #EFF1F7;
   width: 100%;
-  height: 450px; }
+  height: 600px; }
   .advanced-statistics .first-div {
     width: 35%;
     margin: 0 auto; }
-  .advanced-statistics h1 {
+  .advanced-statistics .advanced-statistics-title {
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 45px;
     font-weight: bold; }
-  .advanced-statistics p {
+  .advanced-statistics .advanced-statistics-text {
     font-size: 22px;
     font-weight: 500;
     color: #bfbfbf;
@@ -203,10 +203,14 @@ body {
 
 .cards {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  display: flex; }
   .cards .card {
+    margin: 120px 0 0 0;
+    padding: 0 20px 0 20px;
     width: 400px;
-    height: 250px;
+    height: 300px;
     background-color: #fff;
     border-radius: 10px; }
   .cards .image-circle {
@@ -214,7 +218,30 @@ body {
     height: 90px;
     border-radius: 50%;
     background: url("../img/icon-brand-recognition.svg") no-repeat center #35323e;
+    position: absolute;
+    left: 3%;
+    bottom: 60%; }
+  .cards .image-circle1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url("../img/icon-detailed-records.svg") no-repeat center #35323e;
     position: absolute; }
+  .cards .image-circle2 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url("../img/icon-fully-customizable.svg") no-repeat center #35323e;
+    position: absolute; }
+
+.body-text {
+  padding: 60px 15px 20px 15px; }
+  .body-text .card-title {
+    font-size: 25px; }
+  .body-text .card-text {
+    color: #bfbfbf;
+    font-size: 18px;
+    font-weight: 500; }
 
 .first-button {
   margin-right: 20px;

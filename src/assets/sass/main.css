@@ -47,7 +47,7 @@ a:hover, a:active, a:focus, a:focus-within {
 .Container-Full p {
   margin: 10px 0 50px 0;
   padding: 0;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   color: hsl(0deg, 0%, 75%);
   width: 60%;
@@ -86,6 +86,7 @@ nav {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .Container {
@@ -138,32 +139,107 @@ body {
   width: 10%;
 }
 
-.advanced-statistics {
-  margin: 100px 0 0 0;
+.Main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.shorten-container {
   padding: 0;
+  margin: 120px 0 0 0;
   background-color: #EFF1F7;
   width: 100%;
-  height: 700px;
+  height: 450px;
+}
+
+.shorten {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 5%;
 }
 
 .shorten-box {
-  width: 80%;
+  width: 100%;
   height: 168px;
-  margin: 0 auto;
   background: url("../img/bg-shorten-desktop.svg") no-repeat hsl(255deg, 11%, 22%);
   border-radius: 10px;
 }
 .shorten-box .shorten-items {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(1fr, 2);
-  justify-content: center;
-  gap: 20px;
+  width: 85%;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
-.shorten-box .shorten-items input {
-  width: 70%;
+.shorten-box .shorten-items .input {
+  width: 75%;
+}
+.shorten-box .input input {
+  width: 100%;
   border-radius: 8px;
   padding: 18px;
+}
+.shorten-box .shorten-items .button {
+  width: 25%;
+  padding: 0 0 0 55px;
+}
+
+.results {
+  width: 100%;
+}
+.results .result {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.results .result p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.results .result div {
+  display: flex;
+}
+.results .result div p {
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(180deg, 66%, 49%);
+}
+
+.advanced-statistics {
+  width: 100%;
+  background-color: #EFF1F7;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+}
+.advanced-statistics .first-div {
+  width: 35%;
+  margin: 0 auto;
+}
+.advanced-statistics .advanced-statistics-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+.advanced-statistics .advanced-statistics-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 75%);
+  text-align: center;
+  line-height: 1.5;
 }
 
 .first-button {
@@ -176,6 +252,7 @@ body {
   font-weight: 700;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 .first-button:hover, .first-button:active, .first-button:focus, .first-button:focus-within {
   background-color: hsl(180deg, 66%, 49%);
@@ -186,6 +263,7 @@ body {
   font-weight: 700;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 
 .second-button {
@@ -197,6 +275,7 @@ body {
   font-weight: 700;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 .second-button:hover, .second-button:active, .second-button:focus, .second-button:focus-within {
   background-color: #fff;
@@ -207,6 +286,7 @@ body {
   font-weight: 700;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 
 .Container-Full button {
@@ -218,6 +298,7 @@ body {
   font-weight: 700;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 .Container-Full button:hover, .Container-Full button:active, .Container-Full button:focus, .Container-Full button:focus-within {
   background-color: hsl(257deg, 27%, 26%);
@@ -228,15 +309,131 @@ body {
   font-weight: 700;
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 
 .shorten-items button {
   background-color: hsl(180deg, 66%, 49%);
-  width: 200px;
+  width: 180px;
   padding: 18px;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+}
+.shorten-items button:hover, .shorten-items button:active, .shorten-items button:focus, .shorten-items button:focus-within {
+  background-color: hsl(180deg, 66%, 49%);
+  width: 180px;
+  padding: 18px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-button {
+  margin: 10px 0 10px 25px;
+  background-color: hsl(180deg, 66%, 49%);
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.copy-button:hover, .copy-button:active, .copy-button:focus, .copy-button:focus-within {
+  background-color: hsl(257deg, 27%, 26%);
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.cards {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+.cards .card-wrapper {
+  position: relative;
+}
+.cards .card {
+  margin-top: 100px;
+  padding: 0 20px 0 20px;
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.cards .card1 {
+  margin-top: 150px;
+  padding: 0 20px 0 20px;
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.cards .card2 {
+  margin-top: 200px;
+  padding: 0 20px 0 20px;
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.cards .border {
+  height: 20px;
+  width: 35px;
+  margin-top: 20%;
+  border-top: 8px solid hsl(180deg, 66%, 49%);
+}
+.cards .image-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url("../img/icon-brand-recognition.svg") no-repeat center hsl(255deg, 11%, 22%);
+  position: absolute;
+  left: 7%;
+  bottom: 70%;
+}
+.cards .image-circle1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url("../img/icon-detailed-records.svg") no-repeat center hsl(255deg, 11%, 22%);
+  position: absolute;
+  left: 7%;
+  bottom: 62%;
+}
+.cards .image-circle2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url("../img/icon-fully-customizable.svg") no-repeat center hsl(255deg, 11%, 22%);
+  position: absolute;
+  left: 7%;
+  bottom: 52%;
+}
+
+.body-text {
+  padding: 60px 15px 20px 15px;
+}
+.body-text .card-title {
+  font-size: 25px;
+}
+.body-text .card-text {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 18px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
