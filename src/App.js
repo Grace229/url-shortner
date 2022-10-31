@@ -1,6 +1,8 @@
 import Header from "./components/header";
 import Hero from "./components/Hero";
-import Main from "./components/main"
+import Main from "./components/main";
+import Boost from "./components/Boost";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Header />
       <Hero />
       <Main />
+      <Boost />
+      <Footer />
     </div>
   );
 }

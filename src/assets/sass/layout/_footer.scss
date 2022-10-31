@@ -1,3 +1,41 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer{
+    background-color: $DarkViolet;
+    width: 100%;
+    height: auto;
+}
+.footer-container{
+   width: 80%;
+   margin: 0 auto;
+   padding: 80px 0 110px 0;
+    display: grid;
+    grid-template-columns: 35% 15% 15% 15% 20%;
+    h4{
+        color: $White;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        color: $White;
+        font-size: 13px;
+        font-weight: none;
+       
+    }
+   li{
+    font-weight: 100;
+    margin-top: 15px;
+        @include on-event{        
+            color: $Cyan;
+        }
+    }
+    .icons{
+        color: $White;
+        font-size: 25px;
+        margin: 0 10px;
+        @include on-event{        
+            color: $Cyan;
+        }
+    }
+}

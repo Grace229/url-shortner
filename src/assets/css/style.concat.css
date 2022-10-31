@@ -117,6 +117,22 @@ body {
 .col-2 {
   width: 10%; }
 
+.boost-container {
+  width: 100%;
+  height: 250px;
+  background: url("../img/bg-boost-desktop.svg") no-repeat #35323e;
+  border-radius: 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .boost-container h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 40px;
+    padding: 70px 0 0 0; }
+
 .Main {
   width: 100%;
   display: flex;
@@ -185,7 +201,8 @@ body {
   width: 100%;
   background-color: #EFF1F7;
   width: 100%;
-  height: 600px; }
+  height: auto;
+  padding-bottom: 100px; }
   .advanced-statistics .first-div {
     width: 35%;
     margin: 0 auto; }
@@ -202,47 +219,39 @@ body {
     text-align: center;
     line-height: 1.5; }
 
-.cards {
+.footer {
+  background-color: #232127;
+  width: 100%;
+  height: auto; }
+
+.footer-container {
   width: 80%;
   margin: 0 auto;
-  position: relative;
-  display: flex; }
-  .cards .card {
-    margin: 120px 0 0 0;
-    padding: 0 20px 0 20px;
-    width: 400px;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 10px; }
-  .cards .image-circle {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: url("../img/icon-brand-recognition.svg") no-repeat center #35323e;
-    position: absolute;
-    left: 3%;
-    bottom: 60%; }
-  .cards .image-circle1 {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: url("../img/icon-detailed-records.svg") no-repeat center #35323e;
-    position: absolute; }
-  .cards .image-circle2 {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: url("../img/icon-fully-customizable.svg") no-repeat center #35323e;
-    position: absolute; }
-
-.body-text {
-  padding: 60px 15px 20px 15px; }
-  .body-text .card-title {
-    font-size: 25px; }
-  .body-text .card-text {
-    color: #bfbfbf;
-    font-size: 18px;
-    font-weight: 500; }
+  padding: 80px 0 110px 0;
+  display: grid;
+  grid-template-columns: 35% 15% 15% 15% 20%; }
+  .footer-container h4 {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 15px; }
+  .footer-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: none; }
+  .footer-container li {
+    font-weight: 100;
+    margin-top: 15px; }
+    .footer-container li:hover, .footer-container li:active, .footer-container li:focus, .footer-container li:focus-within {
+      color: #2acfcf; }
+  .footer-container .icons {
+    color: #fff;
+    font-size: 25px;
+    margin: 0 10px; }
+    .footer-container .icons:hover, .footer-container .icons:active, .footer-container .icons:focus, .footer-container .icons:focus-within {
+      color: #2acfcf; }
 
 .first-button {
   margin-right: 20px;
@@ -256,7 +265,7 @@ body {
   border: none;
   cursor: pointer; }
   .first-button:hover, .first-button:active, .first-button:focus, .first-button:focus-within {
-    background-color: #2acfcf;
+    background-color: #9de3e2;
     width: 100px;
     padding: 10px;
     color: #fff;
@@ -277,10 +286,10 @@ body {
   border: none;
   cursor: pointer; }
   .second-button:hover, .second-button:active, .second-button:focus, .second-button:focus-within {
-    background-color: #fff;
+    background-color: #9de3e2;
     width: 100px;
     padding: 10px;
-    color: #2acfcf;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     border-radius: 25px;
@@ -298,7 +307,7 @@ body {
   border: none;
   cursor: pointer; }
   .Container-Full button:hover, .Container-Full button:active, .Container-Full button:focus, .Container-Full button:focus-within {
-    background-color: #3b3054;
+    background-color: #9de3e2;
     width: 160px;
     padding: 14px;
     color: #fff;
@@ -319,7 +328,7 @@ body {
   border: none;
   cursor: pointer; }
   .shorten-items button:hover, .shorten-items button:active, .shorten-items button:focus, .shorten-items button:focus-within {
-    background-color: #2acfcf;
+    background-color: #9de3e2;
     width: 180px;
     padding: 18px;
     color: #fff;
@@ -350,3 +359,92 @@ body {
     border-radius: 8px;
     border: none;
     cursor: pointer; }
+
+.boost-button {
+  margin-top: 20px;
+  background-color: #2acfcf;
+  width: 150px;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer; }
+  .boost-button:hover, .boost-button:active, .boost-button:focus, .boost-button:focus-within {
+    background-color: #9de3e2;
+    width: 150px;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer; }
+
+.cards {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex; }
+  .cards .card-wrapper {
+    position: relative; }
+  .cards .card {
+    margin-top: 100px;
+    padding: 0 20px 0 20px;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px; }
+  .cards .card1 {
+    margin-top: 150px;
+    padding: 0 20px 0 20px;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px; }
+  .cards .card2 {
+    margin-top: 200px;
+    padding: 0 20px 0 20px;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px; }
+  .cards .border {
+    height: 20px;
+    width: 35px;
+    margin-top: 20%;
+    border-top: 8px solid #2acfcf; }
+  .cards .image-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url("../img/icon-brand-recognition.svg") no-repeat center #35323e;
+    position: absolute;
+    left: 7%;
+    bottom: 70%; }
+  .cards .image-circle1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url("../img/icon-detailed-records.svg") no-repeat center #35323e;
+    position: absolute;
+    left: 7%;
+    bottom: 60%; }
+  .cards .image-circle2 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url("../img/icon-fully-customizable.svg") no-repeat center #35323e;
+    position: absolute;
+    left: 7%;
+    bottom: 50%; }
+
+.body-text {
+  padding: 60px 15px 20px 15px; }
+  .body-text .card-title {
+    font-size: 25px; }
+  .body-text .card-text {
+    color: #bfbfbf;
+    font-size: 18px;
+    font-weight: 500; }

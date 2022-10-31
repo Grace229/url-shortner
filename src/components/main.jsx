@@ -1,5 +1,5 @@
 import React from 'react'
-import Shorten from './shorten'
+import Shorten from './Shorten'
 
 const main = () => {
   return (

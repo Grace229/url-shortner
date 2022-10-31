@@ -61,4 +61,10 @@
   border-radius: 10px;
 }
 
+@mixin Background($height, $img, $border) {
+  width: 100%;
+    height: $height;
+    background: $img;
+    border-radius: $border;
+}
 

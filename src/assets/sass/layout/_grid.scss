@@ -43,3 +43,18 @@ width: 20%;
 .col-2{
 width: 10%;
 }
+.boost-container{
+   
+    @include Background(250px, url('../img/bg-boost-desktop.svg') no-repeat $DarkBlue, 0);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  h1{
+    margin: 0;
+    padding: 0;
+    color: $White;
+    font-size: 40px;
+    padding: 70px 0 0 0;
+  }  
+}
