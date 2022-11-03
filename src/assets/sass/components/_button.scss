@@ -16,12 +16,25 @@
     @include on-event {
         @include roundButton($LightCyan, $White, 160px, 14px);
     }
+    @include for-size(phone-only){
+        width: 40%;
+        font-size: 20px;
+        margin: 20px 130px;
+   
+       
+                }
 }
 .shorten-items button{
     @include Button($Cyan, $White, 180px, 18px);
     @include on-event {
+        @include for-size(phone-only){
+            width: 100%;
+                    }
         @include Button($LightCyan, $White, 180px, 18px);
     }
+    @include for-size(phone-only){
+        width: 100%;
+                }
 }
 
 .copy-button{
@@ -30,6 +43,7 @@
     @include on-event {
         @include Button($Violet, $White, 100px, 10px);
     }
+    
 }
 .boost-button{
     margin-top: 20px;

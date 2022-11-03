@@ -30,9 +30,20 @@
         display: flex;
         align-items: center;
         margin: 0 auto;
+        @include for-size(phone-only){
+            width: 90%;
+           margin: 0 auto;
+            flex-direction: column;
+            padding: 10px 0;
+                    }
     }
     .shorten-items .input{
         width: 75%;
+        @include for-size(phone-only){
+            width: 100%;
+            margin-bottom: 20px;
+           
+                    }
 
     }
     .input input{
@@ -45,6 +56,11 @@
     .shorten-items .button{
         width: 25%;
         padding: 0 0 0 55px;
+        @include for-size(phone-only){
+            width: 100%;
+           margin: 0;
+           padding: 0;
+                    }
 
     }
     
@@ -60,21 +76,34 @@
         padding: 0 20px;
         border-radius: 10px;
         margin: 20px 0;
+        @include for-size(phone-only){
+            flex-direction: column;
+            height: auto;
+            padding: 0 10px;
+                    }
     }
     .result p {
         font-size: 20px;
         font-weight: $Normal;
-    }
-    .result div{
-        display: flex;   
-       
-    }
-    .result div p{
-        font-size: 20px;
-        font-weight: $Normal;
-        color: $Cyan;
+        @include for-size(phone-only){
+           font-size: 17px;
+           border-bottom: 1px solid $Gray ;
+                    }
     }
   
+}
+.result-text{
+    display: flex; 
+    @include for-size(phone-only){
+        flex-direction: column;
+        
+                }  
+   
+}
+.result-text p{
+    font-size: 20px;
+    font-weight: $Normal;
+    color: $Cyan;
 }
 
 .advanced-statistics{

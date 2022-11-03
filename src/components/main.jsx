@@ -1,7 +1,7 @@
 import React from 'react'
 import Shorten from './Shorten'
 
-const main = () => {
+const Main = () => {
   return (
     <div>
    <section className='Main'>
@@ -67,5 +67,5 @@ links, supercharging audience engagement.</p>
   )
 }
 
-export default main
+export default Main
  

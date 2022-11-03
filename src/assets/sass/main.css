@@ -43,6 +43,13 @@ a:hover, a:active, a:focus, a:focus-within {
   letter-spacing: 0;
   width: 80%;
 }
+@media (max-width: 790px) {
+  .Container-Full h1 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .Container-Full p {
   margin: 10px 0 50px 0;
@@ -51,6 +58,14 @@ a:hover, a:active, a:focus, a:focus-within {
   font-weight: 500;
   color: hsl(0deg, 0%, 75%);
   width: 60%;
+}
+@media (max-width: 790px) {
+  .Container-Full p {
+    font-size: 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
 }
 
 nav {
@@ -61,6 +76,23 @@ nav {
   margin-top: 30px;
 }
 
+.icons {
+  font-size: 35px;
+  color: hsl(0deg, 0%, 75%);
+  display: none;
+}
+@media (max-width: 790px) {
+  .icons {
+    display: block;
+  }
+}
+
+.nav {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
 .Navbar {
   margin: 0;
   padding: 0;
@@ -68,6 +100,11 @@ nav {
   width: 35%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 790px) {
+  .Navbar {
+    display: block;
+  }
 }
 .Navbar li img {
   margin-bottom: 10px;
@@ -98,17 +135,39 @@ body {
 .Container-Full {
   width: 100%;
   margin: 50px 0px 0px 0px;
-  height: 500px;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  position: relative;
 }
 
 .hero-image {
   width: 40%;
 }
+@media (max-width: 790px) {
+  .hero-image {
+    width: 90%;
+    margin: 0 0 0 49px;
+  }
+}
+
+@media (max-width: 790px) {
+  .hero-image img {
+    width: 100%;
+  }
+}
 
 .hero-text {
   margin: 0 0 0 150px;
   width: 60%;
+}
+@media (max-width: 790px) {
+  .hero-text {
+    width: 90%;
+    margin: 0 0 0 0;
+    margin: 0 auto;
+  }
 }
 
 .col-8 {
@@ -195,8 +254,22 @@ body {
   align-items: center;
   margin: 0 auto;
 }
+@media (max-width: 790px) {
+  .shorten-box .shorten-items {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
 .shorten-box .shorten-items .input {
   width: 75%;
+}
+@media (max-width: 790px) {
+  .shorten-box .shorten-items .input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .shorten-box .input input {
   width: 100%;
@@ -206,6 +279,13 @@ body {
 .shorten-box .shorten-items .button {
   width: 25%;
   padding: 0 0 0 55px;
+}
+@media (max-width: 790px) {
+  .shorten-box .shorten-items .button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .results {
@@ -221,14 +301,34 @@ body {
   border-radius: 10px;
   margin: 20px 0;
 }
+@media (max-width: 790px) {
+  .results .result {
+    flex-direction: column;
+    height: auto;
+    padding: 0 10px;
+  }
+}
 .results .result p {
   font-size: 20px;
   font-weight: 500;
 }
-.results .result div {
+@media (max-width: 790px) {
+  .results .result p {
+    font-size: 17px;
+    border-bottom: 1px solid hsl(0deg, 0%, 75%);
+  }
+}
+
+.result-text {
   display: flex;
 }
-.results .result div p {
+@media (max-width: 790px) {
+  .result-text {
+    flex-direction: column;
+  }
+}
+
+.result-text p {
   font-size: 20px;
   font-weight: 500;
   color: hsl(180deg, 66%, 49%);
@@ -283,7 +383,7 @@ body {
   padding: 0;
   margin: 0;
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: none;
 }
 .footer-container li {
@@ -371,6 +471,13 @@ body {
   border: none;
   cursor: pointer;
 }
+@media (max-width: 790px) {
+  .Container-Full button {
+    width: 40%;
+    font-size: 20px;
+    margin: 20px 130px;
+  }
+}
 
 .shorten-items button {
   background-color: hsl(180deg, 66%, 49%);
@@ -393,6 +500,16 @@ body {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 790px) {
+  .shorten-items button:hover, .shorten-items button:active, .shorten-items button:focus, .shorten-items button:focus-within {
+    width: 100%;
+  }
+}
+@media (max-width: 790px) {
+  .shorten-items button {
+    width: 100%;
+  }
 }
 
 .copy-button {

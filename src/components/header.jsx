@@ -1,13 +1,14 @@
 import React from 'react'
 import logo from "../assets/img/logo.svg"
-const header = () => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
+
+const Header = () => {
   return (
     <nav>
-
-<ul className='Navbar'>
-    <li>     
     <img src={logo} alt="" />
-    </li>
+ <div className='nav'>
+ <ul className='Navbar'>
     <li><a href="#">Features</a></li>
     <li><a href="#">Pricing</a></li>
     <li><a href="#">Resources</a></li>
@@ -15,10 +16,12 @@ const header = () => {
 <div>
 <button className='first-button'>Login</button>
 <button className='second-button'>Signup</button>
-
 </div>
+ </div>
+
+<FontAwesomeIcon icon={faBars} className="icons" />
     </nav>
   )
 }
 
-export default header
+export default Header

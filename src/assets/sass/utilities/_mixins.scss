@@ -29,6 +29,22 @@
     @content;
   }
 }
+
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 790px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 800px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}
+
 @mixin Button($color, $textColor, $width, $height ) {
   background-color: $color;
   width: $width;
